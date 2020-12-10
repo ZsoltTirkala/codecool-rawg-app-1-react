@@ -15,7 +15,7 @@ const Register = () => {
 
   const sendRequest = (password) => {
     axios
-      .post(`http://localhost:5000/auth/register`, {
+      .post(`http://localhost:8762/auth/register`, {
         userName: userName,
         email: userEmail,
         password: password,

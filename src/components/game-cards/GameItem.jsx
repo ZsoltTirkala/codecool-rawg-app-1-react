@@ -29,7 +29,7 @@ const GameItem = ({ game }) => {
     }
 
     const token = localStorage.getItem("token");
-    const url = `http://localhost:5000/api/wishlist/add`;
+    const url = `http://localhost:8762/wis/wishlist/add`;
     axios
       .post(url, gameData, {
         headers: {

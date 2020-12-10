@@ -12,7 +12,7 @@ const ProfilePage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const request = await axios.get(`http://localhost:5000/api/me`, {
+      const request = await axios.get(`http://localhost:8762/api/me`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -27,7 +27,7 @@ const ProfilePage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const request = await axios.get(`http://localhost:5000/api/wishlist`, {
+        const request = await axios.get(`http://localhost:8762/wis/wishlist`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
